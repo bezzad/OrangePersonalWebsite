@@ -1,0 +1,73 @@
+﻿<div ng-controller="productsController">
+    <!-- Portfolio Grid Section -->
+    <section class="bg-light-gray" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">{{ 'Portfolios' | translate }}</h2>
+                    <h3 class="section-subheading text-muted">{{ 'PortfoliosTitle' | translate }}</h3>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div ng-repeat="portfolio in products">
+                    <!--<div ng-if="$index % 3 == 0" class="clearfix"></div>-->
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div class=" thumbnail">
+                            <a href="{{ '#portfolioModal' + portfolio.Id }}" ng-click="convertMarked(this)" class="portfolio-link" data-toggle="modal">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-search-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="{{ portfolio.ImageLink }}" class="img-responsive fix-frame" alt="{{ portfolio.ProjectName }}" align="middle" valign="center">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h3>{{ portfolio.ProjectName }}</h3>
+                                <p class="text-muted">{{ portfolio.Category }}</p>
+                                <br/>
+                                <p>
+                                    <a href="{{ portfolio.ProjectUrl }}" class="btn btn-social" role="button" ng-show="{{ portfolio.OpenSource }}"><i class="fa fa-2x fa-github"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+    <div ng-repeat="portfolio in products">
+        <!-- Portfolio Modal 1 -->
+        <div class="portfolio-modal modal fade" id="{{ 'portfolioModal' + portfolio.Id }}" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <a align="center" href="{{ portfolio.ProjectUrl }}"><h2>{{ portfolio.ProjectName }}</h2></a>
+                                <p align="center" class="item-intro text-muted">{{ portfolio.Category }}</p>
+                                <p align="center" class="item-intro text-muted">{{ portfolio.ModifyDate }}</p>
+                                <br />
+                                <div id="{{ portfolio.Id }}" marked="readme_markdown" class="markdown-body"></div>
+
+                                <button type="button" class="btn btn-primary btn-close" data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

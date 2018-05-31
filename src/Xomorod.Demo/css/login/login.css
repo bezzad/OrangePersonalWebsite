@@ -1,0 +1,103 @@
+﻿@font-face {
+    font-family: 'Merkur';
+    src: url('../../fonts/Merkur.otf') format('truetype');
+}
+
+#loginbox {
+    padding-top: 10vh;
+}
+
+    #loginbox > div:first-child {
+        padding-bottom: 10px;
+    }
+
+.iconmelon {
+    display: block;
+    margin: auto;
+}
+
+#form > div {
+    margin-bottom: 25px;
+}
+
+    #form > div:last-child {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+.panel {
+    background-color: transparent;
+}
+
+.panel-body {
+    padding-top: 30px;
+    background-color: rgba(2555,255,255,.3);
+}
+
+#particles {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: -2;
+}
+
+.iconmelon,
+.im {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+
+    .iconmelon:after,
+    .im:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+#svg-logo {
+    z-index: 50;
+    text-shadow: white 0px 0px 8px;
+    -webkit-filter: drop-shadow( 0px 0px 15px white );
+    filter: drop-shadow( 0px 0px 8px white ); 
+    text-decoration: none;
+}
+
+@media(max-height: 500px) {
+    .iconmelon {
+        display: none;
+    }
+}
+
+.panel-title {
+    font-family: "Merkur", arial;
+    font-size: 44px;
+    font-weight: 200;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    text-shadow: white 0px 0px 8px;
+    -webkit-filter: drop-shadow( 0px 0px 120px white );
+    filter: drop-shadow( 0px 0px 8px white ); 
+}
+
+.panel-default > .panel-heading {
+    background-color: transparent;
+}
+
+.btn {
+    font-size: 16px;
+}
+
+.btn-gly {
+    font-size: 1em;
+    padding-right: 10px;
+}

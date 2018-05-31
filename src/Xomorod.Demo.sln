@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xomorod.Demo", "Xomorod.Demo\Xomorod.Demo.csproj", "{68077FDF-8185-4D44-AC50-0E868093A525}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68077FDF-8185-4D44-AC50-0E868093A525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68077FDF-8185-4D44-AC50-0E868093A525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68077FDF-8185-4D44-AC50-0E868093A525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68077FDF-8185-4D44-AC50-0E868093A525}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
