@@ -21,7 +21,7 @@ Xomorod demo is based on the [Bootstrap](http://getbootstrap.com/) framework cre
 # Xomorod Demo Screen
 
 Click to go to [demo](http://demo.xomorod.com) page:
-[![mainpage](https://raw.githubusercontent.com/Xomorod/Demo/master/img/mainpage.png)](http://demo.xomorod.com)
+[![mainpage](https://github.com/bezzad/OrangePersonalWebsite/raw/master/img/mainpage.png)](https://github.com/bezzad/OrangePersonalWebsite)
 
 ## Copyright and License
 
