@@ -20,9 +20,8 @@ Xomorod demo is based on the [Bootstrap](http://getbootstrap.com/) framework cre
 
 # Xomorod Demo Screen
 
-Click to go to [demo](http://demo.xomorod.com) page:
 [![mainpage](https://github.com/bezzad/OrangePersonalWebsite/raw/master/img/mainpage.png)](https://github.com/bezzad/OrangePersonalWebsite)
 
 ## Copyright and License
 
-Copyright ©  2015-2016 [Xomorod](http://xomorod.com). Code released under the [GNU GENERAL PUBLIC LICENSE Version 3](https://raw.githubusercontent.com/Xomorod/Demo/master/LICENSE) license.
+Copyright ©  2015-2019 [Xomorod](http://xomorod.com). Code released under the [GNU GENERAL PUBLIC LICENSE Version 3](https://raw.githubusercontent.com/Xomorod/Demo/master/LICENSE) license.
